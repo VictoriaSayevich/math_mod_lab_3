@@ -1,0 +1,23 @@
+canvas {
+  border: 1px solid black;
+}
+
+.container {
+  --n: 1;
+  width: 500px;
+  width: calc(var(--n)*500px);
+}
+
+.container__element {
+  width: 800px;
+  width: calc(500px/var(--n));
+}
+
+.container__element:nth-child(odd) {
+  background-color: yellow;
+}
+
+.container__element:nth-child(even) {
+  background-color: yellowgreen;
+}
+/*# sourceMappingURL=style.css.map */

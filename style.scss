@@ -1,0 +1,19 @@
+canvas {
+    border: 1px solid black;
+}
+
+.container {
+    --n: 1;
+    width: 500px;
+    width: calc(var(--n)*500px);
+    &__element {
+        width: 800px;
+        width: calc(500px/var(--n));
+        &:nth-child(odd) {
+            background-color: yellow;
+        }
+        &:nth-child(even) {
+            background-color: yellowgreen;
+        }
+    }
+}
